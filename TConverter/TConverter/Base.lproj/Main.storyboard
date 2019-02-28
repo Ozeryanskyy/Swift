@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Найдите идеи на тему «Обои Для Мобильных Телефонов»" translatesAutoresizingMaskIntoConstraints="NO" id="cbV-IQ-xqi">
+                                <rect key="frame" x="-44" y="-24" width="463" height="725"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecd-z8-P98">
+                                <rect key="frame" x="146" y="231.5" width="83" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0ºF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INy-GJ-BV7">
+                                <rect key="frame" x="150" y="396" width="75" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="sX0-j6-sq8">
+                                <rect key="frame" x="55.5" y="328.5" width="264" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="ulh-UJ-Cwn"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="KoU-rS-6pU"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T-Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wSG-Ep-1A7">
+                                <rect key="frame" x="66.5" y="31" width="242" height="44.5"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sX0-j6-sq8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1a7-ie-tK6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="cbV-IQ-xqi" secondAttribute="top" constant="44" id="2LT-8q-PdC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cbV-IQ-xqi" secondAttribute="bottom" constant="-34" id="3Kk-PR-1fz"/>
+                            <constraint firstItem="wSG-Ep-1A7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="11" id="6Am-oH-2mz">
+                                <variation key="heightClass=regular-widthClass=regular" constant="149"/>
+                            </constraint>
+                            <constraint firstItem="INy-GJ-BV7" firstAttribute="centerX" secondItem="cbV-IQ-xqi" secondAttribute="centerX" id="7uT-LT-oML"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cbV-IQ-xqi" secondAttribute="trailing" constant="-44" id="E28-ys-Jv9"/>
+                            <constraint firstItem="INy-GJ-BV7" firstAttribute="top" secondItem="sX0-j6-sq8" secondAttribute="bottom" constant="37.5" id="GaT-wh-yl5"/>
+                            <constraint firstItem="wSG-Ep-1A7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SxU-eX-sfa"/>
+                            <constraint firstItem="sX0-j6-sq8" firstAttribute="top" secondItem="ecd-z8-P98" secondAttribute="bottom" constant="37" id="Uqr-qo-31i"/>
+                            <constraint firstItem="cbV-IQ-xqi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-44" id="YhB-TN-MtV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wSG-Ep-1A7" secondAttribute="trailing" symbolic="YES" id="Ytb-Tc-S56"/>
+                            <constraint firstItem="ecd-z8-P98" firstAttribute="centerX" secondItem="cbV-IQ-xqi" secondAttribute="centerX" id="crP-Bw-y3L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wSG-Ep-1A7" secondAttribute="trailing" constant="16" id="eVL-Kg-591"/>
+                            <constraint firstItem="sX0-j6-sq8" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="fiv-bi-FBi"/>
+                            <constraint firstItem="wSG-Ep-1A7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fyc-8S-WXe">
+                                <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="wSG-Ep-1A7" firstAttribute="leading" secondItem="ecd-z8-P98" secondAttribute="trailing" constant="9.5" id="zgw-8H-PLS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="eVL-Kg-591"/>
+                                <exclude reference="SxU-eX-sfa"/>
+                                <exclude reference="fyc-8S-WXe"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="eVL-Kg-591"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="SxU-eX-sfa"/>
+                                <exclude reference="zgw-8H-PLS"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="fyc-8S-WXe"/>
+                                <exclude reference="zgw-8H-PLS"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="celciusLabel" destination="ecd-z8-P98" id="koc-FJ-QG4"/>
+                        <outlet property="farengeitLabel" destination="INy-GJ-BV7" id="YyZ-pX-dYY"/>
+                        <outlet property="slider" destination="sX0-j6-sq8" id="lLN-X6-MYi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1364" y="-544"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Найдите идеи на тему «Обои Для Мобильных Телефонов»" width="745.1068115234375" height="1394"/>
+    </resources>
+</document>
